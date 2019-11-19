@@ -1,15 +1,17 @@
 {
-  "name": "word-slug",
-  "version": "1.0",
+  "name": "friendly-word-slug",
+  "version": "0.0.4",
   "description": "Generate a friendly slug",
-  "main": "./index.ts",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "mocha tests/test.js",
-    "compile": "tsc"
+    "compile": "tsc",
+    "prepublish": "tsc"
   },
   "author": "Zach Osman",
   "license": "MIT",
-  "dependencies": {
+  "types": "dist/index.d.ts",
+  "devDependencies": {
     "mocha": "^6.2.2",
     "typescript": "^3.7.2"
   }

@@ -12,6 +12,7 @@
     "noImplicitAny": true,
     "strictFunctionTypes": true,
     "sourceMap": true,
+    "declaration": true,
     "alwaysStrict": true
   },
   "include": ["./*.ts"]
