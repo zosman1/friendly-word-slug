@@ -1,14 +1,32 @@
 {
   "name": "friendly-word-slug",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "description": "Generate a friendly slug",
   "main": "./dist/index.js",
+  "author": "Zach Osman",
   "scripts": {
     "test": "mocha tests/test.js",
     "compile": "tsc",
-    "prepublish": "tsc"
+    "prepublishOnly": "tsc"
   },
-  "author": "Zach Osman",
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zosman1/friendly-word-slug.git"
+  },
+  "homepage": "https://github.com/zosman1/friendly-word-slug",
+  "bugs": {
+    "url": "https://github.com/zosman1/friendly-word-slug/issues"
+  },
+  "keywords": [
+    "friendly",
+    "word",
+    "slug",
+    "random",
+    "words"
+  ],
   "license": "MIT",
   "types": "dist/index.d.ts",
   "devDependencies": {
