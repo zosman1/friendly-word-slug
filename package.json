@@ -1,0 +1,16 @@
+{
+  "name": "word-slug",
+  "version": "1.0",
+  "description": "Generate a friendly slug",
+  "main": "./index.ts",
+  "scripts": {
+    "test": "mocha tests/test.js",
+    "compile": "tsc"
+  },
+  "author": "Zach Osman",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^6.2.2",
+    "typescript": "^3.7.2"
+  }
+}
