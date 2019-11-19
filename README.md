@@ -1,4 +1,4 @@
-# Word Slugs 🐌
+# Friendly Word Slugs 🐌
 
 Installation: `npm i friendly-word-slug`
 
