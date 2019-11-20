@@ -1,6 +1,10 @@
+import { camelCase, kebabCase, snakeCase } from "lodash";
+
 import wordList from "./words";
 
-export function words() {
+type InputType = "camelCase" | "kebabCase" | "snakeCase";
+
+export function words(n?: number, type?: InputType) {
   function generateRandomWord() {
     return wordList[randInt(wordList.length)];
   }
@@ -9,5 +13,29 @@ export function words() {
     return Math.floor(Math.random() * lessThan);
   }
 
-  return generateRandomWord();
+  if (typeof n === "number" && typeof type === "string") {
+    let slug = "";
+    for (let i = 0; i < n; i++) {
+      slug = slug + " " + generateRandomWord();
+    }
+
+    switch (type) {
+      case "camelCase":
+        return camelCase(slug);
+      case "kebabCase":
+        return kebabCase(slug);
+      case "snakeCase":
+        return snakeCase(slug);
+      default:
+        throw new Error(`Incompatible type provided.
+        Acceptable Types: "camelCase" | "kebabCase" | "snakeCase"`);
+    }
+  }
+
+  if (n === undefined) {
+    //base functionality
+    return generateRandomWord();
+  }
+
+  throw new Error("Incorrect Function Usage");
 }
