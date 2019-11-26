@@ -12,6 +12,8 @@ Usage:
 
 `randomWords(number, format)`
 
+> NOTE: Acceptable formats include "camelCase" "snakeCase" and "kebabCase"
+
 - returns `number` random words formatted using the `format` scheme 
 ```
 number: how many words to return
