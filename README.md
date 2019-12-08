@@ -24,7 +24,8 @@ format: what format to put them in
 
 
 Example Usage :
-```randomWords()
+```
+randomWords()
 //goose
 
 randomWords(3, "camelCase")
