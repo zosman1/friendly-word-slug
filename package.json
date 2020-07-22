@@ -1,6 +1,6 @@
 {
   "name": "friendly-word-slug",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Generate a friendly slug",
   "main": "./dist/index.js",
   "author": "Zach Osman",
@@ -27,14 +27,14 @@
     "random",
     "words"
   ],
-  "license": "MIT",
+  "license": "Apache",
   "types": "dist/index.d.ts",
   "devDependencies": {
-    "mocha": "^6.2.2",
-    "typescript": "^3.7.2"
+    "mocha": "^6.2.3",
+    "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.149",
-    "lodash": "^4.17.15"
+    "@types/lodash": "^4.14.158",
+    "lodash": "^4.17.19"
   }
 }
